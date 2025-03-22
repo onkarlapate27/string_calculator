@@ -17,3 +17,9 @@ def test_digits_with_spaces_input():
 
 def test_digits_separated_by_newline_char_input():
     assert add("2, 7, 8\n 8") == 25
+
+def test_custom_delimiter_semicolon_input():
+    assert add("//;\n1;2") == 3
+
+def test_custom_delimiter_colon_input():
+    assert add("//:\n4:4:10") == 18
