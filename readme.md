@@ -40,10 +40,10 @@ pytest
 ![String Calculator Output](images/img_5.png)
 
 ## Code Development Steps Screenshots
-![Step 1](images/img_1.png)
+![Step 1](images/img_2.png)
 ---
-![Step 2](images/img_2.png)
+![Step 2](images/img_1.png)
 ---
-![Step 3](images/img_3.png)
+![Step 3](images/img_4.png)
 ---
-![Step 4](images/img_4.png)
+![Step 4](images/img_3.png)
