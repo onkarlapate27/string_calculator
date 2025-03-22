@@ -1,16 +1,8 @@
 def add(nums: str) -> int:
     # empty string
-    if nums == "":
+    if not nums:
         return 0
-    
-    # n numbers with comma separated values
-    if ',' in nums:
-        numbers_list = nums.split(',')
-        addition = 0
-
-        for item in numbers_list:
-            addition += int(item)
-        
-        return addition
-    
-    return int(nums)
+    # n comma separated numbers
+    else:
+        int_numbers_list = [int(num) for num in nums.split(',')]
+        return sum(int_numbers_list)
