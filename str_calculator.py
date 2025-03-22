@@ -1,3 +1,5 @@
+import sys
+
 def add(nums: str) -> int:
     try:
         # empty string
@@ -26,3 +28,16 @@ def add(nums: str) -> int:
     except Exception as e:
         print("Issue in calculating the string resultant.", e)
         raise
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("python str_calculator.py '<numbers_string>'")
+        sys.exit(1)
+
+    input_string = sys.argv[1]
+    try:
+        result = add(input_string)
+        print(f"Result: {result}")
+    except Exception as e:
+        print(f"Error: {e}")
